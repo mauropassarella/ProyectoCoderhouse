@@ -5,96 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mate Oeste</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <title>Mate Oeste</title>
 </head>
 
 <body>
-    <header class="header-contenedor">
-        <!--Barra de navegacion-->
-        <nav class="nav">
-            <div class="nav_contenedor">
-                <div class="nav_contenedor-logo">
-                    LOGO
-                </div>
+    <!-- Barra de navegacion-->
 
-                <ul class="nav_menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./secciones/mate.html">Mates</a></li>
-                    <li><a href="./secciones/producto.html">Productos</a></li>
-                    <li><a href="./secciones/quienes-somos.html">Quienes somos</a></li>
-                    <li><a href="./secciones/contactenos.html">Contactenos</a></li>
-
-                </ul>
-
-                <div class="nav_redes">
-                    <a class="instagram" href="http://www.instagram.com" target="_blank">
-                        Instagram
-                    </a>
-                    <a href="http://www.facebook.com" target="_blank">
-                        Facebook
-                    </a>
-                    <a href="http://www.youtube.com" target="_blank">
-                        Youtube
-
-                    </a>
+    <nav class="navbar navbar-expand-lg navbar-light nav-fondo">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mates Oeste</a>
+            <!--LOGO-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Mates</a>
+                    <a class="nav-link" href="#">Producto</a>
+                    <a class="nav-link">Quienes somos</a>
+                    <a class="nav-link">Contactos</a>
                 </div>
             </div>
+            <div class="navbar-nav">
+                <a class="nav-link" href="">Instagram</a>
+                <a class="nav-link" href="">Facebook</a>
+                <a class="nav-link" href="">Youtube</a>
+            </div>
+        </div>
+    </nav>
 
 
-        </nav>
-    </header>
+
+
+
+
+
     <main>
-        <!--Cuerpo-->
-        <div class="contenedor_imagen">
-            <div class="imagen_fondo">
-                <img src="./img/fondos/fondo-mate3.jpg" alt="f">
+        <div class="hero">
+            <div class="banner">
+                <div class="hero-text">
+                    <h1 style="font-size:50px">Cada mate es unico</h1>
+                </div>
             </div>
-            <div class="contenedor_titulo">
-                <h1 class="titulo">CADA MATE ES UNICO</h1>
-                <h3 class="titulo_secundario">CUANDO EL MATE ES TUYO EL MOMENTO TAMBIEN LO ES</h3>
+        </div>
+        <div>
+            <h3 class="text-center">CUANDO EL MATE EL TUYO, EL MOMENTO TAMBIEN LO ES</h3>
+            <h1 class="text-center"> NUESTROS EXCLUSIVOS</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/exclusivos/exclusivo1.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Torpedo CALADO exclusivo</h5>
+                                    <p>Torpedo CALADO exclusivo criollo c/base y bolitas. Tecnicas de calado por maestro
+                                        platero.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/exclusivos/exclusivo2.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Torpedo c/base y bolitas exclusivo</h5>
+                                    <p>Torpedo con base y bolitas de alpaca + cuero cincelado.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/exclusivos/exclusivo3.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Imperial Exclusivo c/ base y bolitas CALADO de Maestro Platero</h5>
+                                    <p>Imperial c/ base y bolitas todo calado a mano. Piezas macizas de alpaca, virola y
+                                        fleje
+                                        calados a medida del mate, cincelado de alto relieve (perforaciones). Exclusivos
+                                        de Maestro
+                                        Platero</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="contenedor_referencias">
-            <h3 class="titulo_referencia">Nuestro Equipo</h3>
-            <div class="referencias">
-                <img src="./img/personas/persona1.jpg" alt="Img1">
-                <img src="./img/personas/persona2.jpeg" alt="Img2">
-                <img src="./img/personas/persona3.jpg" alt="Img3">
-            </div>
-        </div>
 
-        <div class="contenedor_final">
-            <div class="contenedor_final-texto">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita ex dolorum asperiores
-                    porro amet consequuntur, corrupti omnis, vitae consequatur quae ullam rerum alias cumque error
-                    laborum assumenda dolor adipisci! Aliquam eligendi unde possimus numquam praesentium minus similique
-                    natus earum quis deserunt veniam, asperiores, fugit eum odio quae culpa ad fugiat magni est, nemo ab
-                    saepe sunt perspiciatis? Voluptatibus debitis est quis deleniti aliquam repellat mollitia ab facere
-                    error nam.
-                </p>
-            </div>
-            <div class="contenedor_final-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qnoTpiI7XRg" title="Video de mate"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
 
     </main>
-
-    <footer>
-        <!--Pie de Pagina-->
-        <p>All images remain property of their original owners. Site & code . Privacy Policy · Terms of Service© 2021
-            Company, Inc</p>
-    </footer>
-
 
 
 </body>
